@@ -25,7 +25,6 @@ authentication 필요한 코드의 경우, header의 Authorization에 Bearer: {K
 
 request
 
-
 - name: string. 4-12글자. alphanumeric
 - email: string. 100자 미만. email형식
 - password: 8-16글자.
@@ -52,7 +51,7 @@ request
 
 
 response
-- ["btc", "xrp", "bch", "eth"]
+- ["btc", "xrp", "doge", "eth"]
 
 ### /assets
 본인의 자산을 조회한다. 없는 자산의 경우 노출시키지 않는다.
@@ -143,7 +142,7 @@ jwt.sign({pub: 'pubKey' }, 'secretKey', {untilAt: 1000 * 60 * 5});
  
 
 ## 제출
-12.12 까지. etl을 통해 제출. 
+11.28 까지. etl을 통해 제출. 
 폴더명, 파일명을 학번으로 하여 코드를 zip로 압축하여(node_modules제외) 제출.(ex - 2007-11186.zip)  
 하루 늦을 때마다 5% 감점. 13일까지 제출 받음.  
 
