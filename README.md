@@ -120,7 +120,12 @@ express, mongoose, jsonwebtoken, coingecko-api, express-validator. node-fetch, a
 
 - 코인 2종 추가.  
 - 로그인 시 jwt사용하기.(http://jwt.io)  
-- 코드샌드박스에 올려, url을 같이 제출.(READEME.md에 작성)
+- 코드샌드박스에 올려, url 2값만 제출.
+ -   codesandbox.txt 
+```
+https://codesandbox.io/s/determined-wildflower-1lcql?file=/src/index.js
+https://1lcql.sse.codesandbox.io/
+```
 - 코인 구매, 판매 시 전량구매/전량판매 기능 구현. (ex - xrp 전량 구매 => 사용가능한 usd를 다 사용하여 xrp구매)
 
 ### 전량 구매/판매
