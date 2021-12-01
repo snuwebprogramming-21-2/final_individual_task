@@ -134,7 +134,7 @@ ex) {all: true}
 - key 제작 시 publicKey, secretKey를 database에 저장. 클라이언트에게 두값을 모두 전달. (로그인 시 publicKey, secretKey라는 키를 전달)
 - 클라이언트는 매 요청 제작시마다, token을 생성한다고 가정. token의 exp = 현재시간. data에는 퍼블릭 키를 전달.  
 ```
-jwt.sign({pub: 'pubKey' }, 'secretKey',  { expiresIn: 60 * 60 });
+jwt.sign({publicKey: 'pubKey' }, 'secretKey',  { expiresIn: 60 * 60 });
 ```
 
  - 서버에서는 publicKey로 등록된 secretKey를 검색하여, 해당 토큰이 1) 유효한지 2) 시간이 유효한지를 검사하여 token의 valid를 체크.
