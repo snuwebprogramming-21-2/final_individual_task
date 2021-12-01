@@ -88,7 +88,7 @@ request
 response
 구매결과를 리턴한다.
 - {price: 30000, quantity: 1}
-
+- 구매불가능한 quantity 입력 시 에러(400) 리턴
 
 ### /coins/:coin_name/sell
 코인을 판매한다. 가격은 실시간으로 가져온 api의 가격을 따른다.
@@ -103,8 +103,7 @@ request
 response
 구매결과를 리턴한다.
 - {price: 30000, quantity: 1}
-
-
+- 본인이 가진 자산 초과로 판매 요청 시 에러(400) 리턴
 
 
 ## models
