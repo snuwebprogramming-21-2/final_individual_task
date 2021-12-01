@@ -132,7 +132,7 @@ ex) {all: true}
 
 - https://www.npmjs.com/package/jsonwebtoken 이용  
 - key 제작 시 publicKey, secretKey를 database에 저장. 클라이언트에게 두값을 모두 전달. (로그인 시 publicKey, secretKey라는 키를 전달)
-- 클라이언트는 매 요청 제작시마다, token을 생성한다고 가정. token의 exp = 현재시간. data에는 퍼블릭 키를 전달.  
+- 클라이언트는 매 요청 제작시마다, token을 생성한다고 가정. data에는 퍼블릭 키를 전달, expiresIn은 60으로 설정하고 값 전달.
 ```
 jwt.sign({publicKey: 'pubKey' }, 'secretKey',  { expiresIn: 60 });
 ```
