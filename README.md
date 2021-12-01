@@ -51,9 +51,9 @@ request
 
 
 response
-- ["btc", "xrp", "doge", "eth"]
+- ['bitcoin','ripple', 'dogecoin', 'ethereum']
 
-### /assets
+### /balance
 본인의 자산을 조회한다. 없는 자산의 경우 노출시키지 않는다.
 [:GET]  
 :auth_required  
@@ -62,7 +62,7 @@ response
 request
 
 response
-- {"usd": 3000, "bitcoin": 1, "ripple": 2, "bdogecoin": 3, "ethereum": 4}
+- {"usd": 3000, "bitcoin": 1, "ripple": 2, "dogecoin": 3, "ethereum": 4}
 
 ### /coins/:coin_name
 코인의 현재 시세를 보여준다.
