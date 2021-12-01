@@ -97,7 +97,7 @@ response
 
 
 request
-- quantity: number. 소수점 4번째 자리까지.
+- quantity: number. 소수점 4번째 자리까지. (5자리 이상일 경우 에러 리턴)
 
 
 response
