@@ -40,6 +40,7 @@ request
 - email
 - password
 
+#### 로그인 시 마다 새로운 키 생성해서 저장
 
 response
 - {key: {key}}
